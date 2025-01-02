@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <title>Creer un article</title>
+</head>
+<body>
+    <header>
+        <span>Blog</span>
+        <ul>
+        <li class="accueil-link">Accueil</li>
+        <li class="ajout-link">Ajouter un article</li>
+        </ul>
+    </header>
+    <main>
+        <div class="parent">
+            <h2>Ajouter un article</h2>
+            <form action="">
+                <label for="auteur">Auteur</label>
+                <input type="text" id="auteur" placeholder="Ajouter le nom d'auteur">
+                <label for="image">Image de profil</label>
+                <input type="text" id="image" placeholder="Ajouter le lien vers l'image">
+                <label for="categorie">Catégorie :</label>
+        <select id="categorie" name="categorie">
+            <option value="" disabled selected>Ajouter la catégorie</option>
+            <option value="sport">Sport</option>
+            <option value="politique">Politique</option>
+            <option value="historiques">Historiques</option>
+            <option value="scientifiques">Scientifiques</option>
+        </select>
+                <label for="titre">Titre</label>
+                <input type="text" id="titre" placeholder="Ajouter le titre" >
+                <label for="article">Article</label>
+                <textarea id="article" rows="13"  cols="75" placeholder="Ajouter le contenu de l'article" ></textarea>
+            </form>
+            <div class="spans">
+                <span class="annu">Annuler</span>
+                <span class="sauv">Sauvgarder</span>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; blog</footer>
+    <script src="add.js"></script>
+</body>
+</html>
