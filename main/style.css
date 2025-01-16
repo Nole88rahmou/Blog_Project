@@ -10,9 +10,10 @@ body {
 }
 
 header {
+    position: relative;
     height: 65px;
     padding: 0 15px;
-    background-color: #3ec085;
+    background-color: #35ac76;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +57,7 @@ main {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    
 }
 
 h2 {
@@ -73,6 +75,7 @@ h2 {
     position: relative;
     width: 600px;
     padding: 10px 90px;
+    padding-bottom: 30px;
     margin-left: 15px;
     margin-bottom: 50px;
     background-color: white;
@@ -95,19 +98,30 @@ img {
 }
 
 .article-text {
+    position: relative;
     margin-top: 40px;
     padding-bottom: 50px;
+}
+
+.article-text::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    bottom: 20px;
+    right: 0;
 }
 
 .btns {
     position: absolute;
     right: 40px;
-    bottom: 20px;
+    bottom: 19px;
 }
 
 .modiBtn {
     margin-left: 20px;
-    border: 1px solid #3ec085;
+    border: 1px solid #35ac76;
     color: #3ec085;
     padding: 2px 17px;
     cursor: pointer;
@@ -117,7 +131,7 @@ img {
 
 .modiBtn:hover {
     color: white;
-    background-color: #3ec085;
+    background-color: #35ac76;
     transition: 0.5s;
 }
 
@@ -154,7 +168,7 @@ select {
 }
 
 .categories {
-    padding: 10px 20px;
+    padding: 20px 20px;
     width: 165px;
     margin-right: 10px;
     background-color: white;
@@ -163,6 +177,21 @@ select {
 
 .categories span {
     display: block;
+    cursor: pointer;
+}
+
+.categories span:hover {
+    color: #3ec085;
+    font-size: 20px;
+    transform: translateX(2px);
+    transition: 0.5s;
+}
+
+.categorieClick {
+    transition: 0.7s;
+    color: #35ac76;
+    font-size: 20px;
+    transform: translateX(2px);
 }
 
 footer {
@@ -174,4 +203,50 @@ footer {
     align-items: center;
     font-weight: 700;
     font-size: 20px;
+    position: relative;
 }
+
+/* Confirmation De suppression */
+.confirm-delete {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 3; 
+    position: fixed;
+    top: calc(50% - 75px);
+    right: calc(50% - 200px);
+    display: none;
+}
+
+.annu {
+    background-color: white;
+    color: #3ec085;
+    font-weight: bold;
+    padding: 2px 16px;
+    border: 1px solid #3ec085;
+    cursor: pointer;
+}
+
+.conf {
+    background-color: #3ec085;
+    color: white;
+    padding: 2px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirm-delete p  {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+}
+
+/* ======== Responsivité ======== */
+

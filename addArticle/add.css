@@ -10,7 +10,7 @@ body {
 header {
     height: 65px;
     padding: 0 15px;
-    background-color: #3ec085;
+    background-color: #35ac76;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,13 +96,13 @@ border-style: inset;
 
 .annu {
     color: #3ec085;
-    border: 1px solid #3ec085;
+    border: 1px solid #35ac76;
     border-radius: 6px;
 }
 
 .sauv {
     color: white;
-    background-color: #3ec085;
+    background-color: #35ac76;
     border-radius: 6px;
     margin-left: 5px;
 }

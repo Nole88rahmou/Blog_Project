@@ -7,75 +7,61 @@
   <title>Blog</title>
 </head>
 <body>
-  <header>
-    <span>Blog</span>
-    <ul>
-      <li class="accueil-link">Accueil</li>
-      <li class="ajout-link">Ajouter un article</li>
-    </ul>
-  </header>
-  <!-- This Is Main Page -->
-  <main>
-    <div class="parent">
-      <aside>
-        <!-- <div class="label"> -->
-          <select >
-            <option selected>Les plus recents</option>
-            <option value="politique">Les plus anciens</option>
-        </select>
-        <!-- </div> -->
-        <div class="categories">
-          <span>Histoire (2)</span>
-          <span>Technologie (1)</span>
-        </div>
-      </aside>
-      <!-- Div Pour Les Articles -->
-      <div class="articles">
-        <div class="article">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJ2sZUUc6xap9g__-HYUVi9LA2MnfG8_7xF33YejfCkudFpb2voAVKP3K2kg9RBHVo4gFx5saiDaNNzxhhMLjPg" alt="img">
-          <p class="auteur">Donald Trump</p>
-          <p class="date">Donald - mercredi 29 janvier 2020</p>
-          <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia consequatur ratione porro dolorum iusto eaque odio dignissimos tempora earum laudantium ipsa suscipit totam, nostrum quas odit sapiente unde inventore!. 
-          <br>
-          <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident reprehenderit mollitia necessitatibus earum sunt! Magnam dolorum error maiores tempore accusantium aut odit! Ab, dignissimos laudantium ipsum aliquam dolores delectus.
-          </p>
-          <div class="btns">
-            <span class="suppBtn">Supprimer</span>
-            <span class="modiBtn">Modifier</span>
-          </div>
-        </div>
-        <!-- <div class="article">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJ2sZUUc6xap9g__-HYUVi9LA2MnfG8_7xF33YejfCkudFpb2voAVKP3K2kg9RBHVo4gFx5saiDaNNzxhhMLjPg" alt="img">
-          <p class="auteur">Donald Trump</p>
-          <p class="date">Donald - mercredi 29 janvier 2020</p>
-          <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia consequatur ratione porro dolorum iusto eaque odio dignissimos tempora earum laudantium ipsa suscipit totam, nostrum quas odit sapiente unde inventore!. 
-          <br>
-          <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident reprehenderit mollitia necessitatibus earum sunt! Magnam dolorum error maiores tempore accusantium aut odit! Ab, dignissimos laudantium ipsum aliquam dolores delectus.
-          </p>
-          <div class="btns">
-            <span class="suppBtn">Supprimer</span>
-            <span class="modiBtn">Modifier</span>
-          </div>
-        </div>
-        <div class="article">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJ2sZUUc6xap9g__-HYUVi9LA2MnfG8_7xF33YejfCkudFpb2voAVKP3K2kg9RBHVo4gFx5saiDaNNzxhhMLjPg" alt="img">
-          <p class="auteur">Donald Trump</p>
-          <p class="date">Donald - mercredi 29 janvier 2020</p>
-          <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia consequatur ratione porro dolorum iusto eaque odio dignissimos tempora earum laudantium ipsa suscipit totam, nostrum quas odit sapiente unde inventore!. 
-          <br>
-          <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident reprehenderit mollitia necessitatibus earum sunt! Magnam dolorum error maiores tempore accusantium aut odit! Ab, dignissimos laudantium ipsum aliquam dolores delectus.
-          </p>
-          <div class="btns">
-            <span class="suppBtn">Supprimer</span>
-            <span class="modiBtn">Modifier</span>
-          </div>
-        </div> -->
+  <div class="confirm-delete">
+    <p>Etes vous sur de vouloir supprimer votre article ?</p>
+    <div>
+      <span class="annu">Annuler</span>
+      <span class="conf">Confirmer</span>
     </div>
-  </main>
-  <footer>&copy; blog</footer>
+  </div>
+  <div class="black">
+    <!-- This Is BlackDiv For Delete -->
+     <div class="container">
+       <header>
+         <span>Blog</span>
+         <ul>
+           <li class="accueil-link">Accueil</li>
+           <li class="ajout-link">Ajouter un article</li>
+         </ul>
+       </header>
+       <!-- This Is Main Page -->
+       <main>
+         <div class="parent">
+           <aside>
+             <!-- <div class="label"> -->
+               <select >
+                 <option selected>Les plus recents</option>
+                 <option >Les plus anciens</option>
+             </select>
+             <!-- </div> -->
+             <div class="categories">
+               <!-- <span>Histoire (2)</span>
+               <span>Technologie (1)</span> -->
+             </div>
+           </aside>
+           <!-- Div Pour Les Articles -->
+           <div class="articles">
+             <div class="article" style="display: none;">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJ2sZUUc6xap9g__-HYUVi9LA2MnfG8_7xF33YejfCkudFpb2voAVKP3K2kg9RBHVo4gFx5saiDaNNzxhhMLjPg" alt="img">
+               <p class="auteur">This Is A Static Article</p>
+               <p class="date">Static - mercredi 29 janvier 2020</p>
+               <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia consequatur ratione porro dolorum iusto eaque odio dignissimos tempora earum laudantium ipsa suscipit totam, nostrum quas odit sapiente unde inventore!. 
+               <br>
+               <br>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident reprehenderit mollitia necessitatibus earum sunt! Magnam dolorum error maiores tempore accusantium aut odit! Ab, dignissimos laudantium ipsum aliquam dolores delectus.
+               </p>
+               <div class="btns">
+                 <span class="suppBtn">Supprimer</span>
+                 <span class="modiBtn">Modifier</span>
+               </div>
+             </div>
+         </div>
+       </main>
+       <footer>&copy; blog</footer>
+     </div>
+     </div>
   <script src="main.js"></script>
 </body>
 </html>
+
+

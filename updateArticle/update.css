@@ -117,3 +117,37 @@ footer {
     font-weight: 700;
     font-size: 20px;
 }
+
+.confirm {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 3; 
+    position: fixed;
+    top: calc(50% - 75px);
+    right: calc(50% - 200px);
+    display: none;
+}
+
+.annu1 {
+    background-color: white;
+    color: #3ec085;
+    font-weight: bold;
+    padding: 2px 16px;
+    border: 1px solid #3ec085;
+    cursor: pointer;
+}
+
+.conf1 {
+    background-color: #3ec085;
+    color: white;
+    padding: 2px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
